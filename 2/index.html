@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasukipriya</title>
+    <!-- <script>alert("Press F11")</script> -->
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            background-image: url("img.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content:center;
+            background-color:rgba(0, 0, 0, 0.747);
+            width: 100%;
+            height: 75px;
+            position: sticky;
+            top: 0;
+            z-index:100;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            margin: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:1.1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition-duration: 1s;
+            color: grey;
+        }
+        a:hover{
+            background:url("img.webp") no-repeat;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 1.7rem;
+            transition-duration: 0.5s;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .container{
+            display: flex;
+            flex-direction:column; 
+            justify-content: center;      
+            align-items: center;
+            text-align: center;
+        }
+        #headline{
+            margin-top: 15%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:15rem;
+            text-align: center;
+            background:url("Screenshot\ \(59\).png") no-repeat;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 99;
+        }
+        #about, #contact{
+            margin-top: 20%;
+            padding: 1% 10% 3% 10%;
+            border-radius: 10px;
+            width: 1000px;
+            background: rgba( 255, 255, 255, 0.15 );
+            backdrop-filter: blur( 17px );
+            -webkit-backdrop-filter: blur( 13.5px );
+            user-select: none;
+        }
+        #about h2, #contact h2{
+            background:url("img.webp") no-repeat 3px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:50px;
+            z-index: 1000;
+        }
+        #about p{
+            margin-top: 15%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #471B63;        
+            font-size:1.7rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            width: 1000px;
+            text-align:center;
+        }
+        form{
+            margin-top: 15%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ::placeholder{
+            font-size: 1.5rem;
+            margin: 2%;
+            color: #EE4C20;
+            text-align: center;
+        }
+        #contact input{
+            font-size: 1.8rem;
+            text-align: center;
+            color: #471B63;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: solid #471B63 1px;
+            padding: 1%;
+        }
+        #contact button{
+            margin: 3%;
+            font-size: 1.6rem;
+            outline: none;
+            border: solid #471B63 1px;
+            color: #471B63;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+        #contact button:hover{
+            background-color: #471B63;
+            color: white;
+            transition-duration: 1s;
+            box-shadow: 0 0 5px 0 #471B63;
+        }
+        .social img{
+            margin-top: 50px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transition-duration: 1.2s;
+        }
+        .social img:hover{
+            transition-duration: 0.8s;
+            transform: translateY(-4px);
+            margin: 1%;
+            cursor: pointer;
+        }
+        footer{
+            text-align: center;
+            margin-top: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            background: rgba( 255, 255, 255, 0.15 );
+            backdrop-filter: blur( 17px );
+            -webkit-backdrop-filter: blur( 13.5px );
+            width: 1000px;
+        }
+        footer p{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3rem;
+            margin: 0;
+            background:url("img.webp") no-repeat;
+            background-size: cover;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop id="video">
+        <source src="https://cdn.dribbble.com/users/288987/screenshots/13986071/media/911088c497137bf632c42e6aff44fa83.mp4" type="video/mp4">
+      </video>
+    <nav>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </nav>
+    
+    <div class="container" id="home">
+        <h1 id="headline">Hey, Wassup!</h1>
+        
+        
+        <div id="about">
+            <h2>ABOUT ME</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quidem voluptas tenetur maxime quos corrupti nisi beatae, illum consequuntur. Minima dignissimos accusantium, corporis culpa eum, explicabo quam a ducimus tempore odit magnam minus exercitationem voluptate numquam saepe impedit, beatae quod nostrum ipsam ullam. Consequuntur, possimus facere vero rerum ipsam quisquam?</p>
+        </div>
+       
+        <div id="contact">
+            <h2>CONNECT</h2>
+            <form action="/" method="post" autocomplete="off">
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+                <input type="email" mail="mail" id="mail" placeholder="E-Mail"><br>
+                <button type="submit">Go</button>
+            </form>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/vasukipriya-k-n-5034ba189/"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png"/></a>
+                <a href="https://github.com/VasukipriyaKN"><img src="https://img.icons8.com/fluency/48/000000/github.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a>
+                
+                
+                
+            </div>
+        </div>    
+        <footer>
+            <p>Copyright &copy;2021</p>
+            <p>Designed by: Vasukipriya KN</p>    
+        </footer>
+    </div>
+</body>
+</html>
