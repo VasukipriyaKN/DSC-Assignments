@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+            background-color: #7cffcb;
+background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+
+        
+            text-align: center;
+            color: rgb(39, 83, 0);
+            font-size: 1.5rem;
+        }
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+        }
+        input, select {
+            background-color: transparent;
+            border: 1px solid rgb(39, 83, 0);
+            border-radius: 20px;
+            outline: none;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            font-size: 2rem;
+            color: rgb(39, 83, 0);
+        
+        }
+        label, select {
+            font-size: 2rem;
+            background-color: transparent;
+            color: rgb(39, 83, 0);
+            outline: none;
+        }
+        input[type="submit"]{
+            background-color: rgb(39, 83, 0);
+            color: rgb(222, 255, 194);
+            transition-duration: 1s;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(222, 255, 194);
+            color: rgb(39, 83, 0);
+            transition-duration: 1s;
+        }
+        ::placeholder {
+            font-size: 1.7rem;
+            color: rgb(39, 83, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="" method="get">
+        <input type="text" name="name" id="name" placeholder="Enter your Name"><br>
+        <input type="email" name="mail" id="mail" placeholder="Enter your Email"><br>
+        <input type="tel" name="phnum" id="phnum" placeholder="Enter your Contact Number"><br>
+        <label for="sem">Semester</label>
+        <select name="sem" id="sem">
+            <option value="">1</option>
+            <option value="">3</option>
+            <option value="">5</option>
+            <option value="">7</option>
+        </select> <br>
+        <label for="sem">Branch</label>
+        <select name="brance" id="branch">
+            <option value="">CSE</option>
+            <option value="">IS</option>
+            <option value="">MECH</option>
+            <option value="">ECE</option>
+        </select><br>
+        <label for="">Upload your Passport size photo</label><br>
+        <input style="border: none;" type="file"><br>
+        <input type="submit" name="submit">
+
+    </form>
+</body>
+
+</html>
